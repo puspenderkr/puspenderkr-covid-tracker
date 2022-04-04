@@ -4,6 +4,7 @@ require("dotenv").config();
 const mongoose = require("mongoose");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const userRoutes = require("./routes/userRoutes");
+const covidRoutes = require("./routes/covidRoutes");
 const path = require("path");
 
 mongoose
@@ -29,6 +30,7 @@ app.use(express.json());
 // });
 
 app.use("/api/users", userRoutes);
+app.use("/api/covid", covidRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
