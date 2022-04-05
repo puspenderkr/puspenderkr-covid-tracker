@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  /*  height: 100vh; */
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: #00272b;
+}
+
+.landingpage {
+  margin: auto;
+  min-width: 1200px;
+  max-width: 90%;
+  min-height: 800px;
+  height: 100%;
+  background-color: #f6e7cb;
+  background-image: url("https://gist.githubusercontent.com/anniedotexe/8ab1f7baa078c8024144e232dc3e6763/raw/913759318c00a3110706509c566e9da5335dfa3c/purple-blob.svg"),
+    url("https://gist.githubusercontent.com/anniedotexe/8ab1f7baa078c8024144e232dc3e6763/raw/913759318c00a3110706509c566e9da5335dfa3c/tan-blob.svg"),
+    url("https://gist.githubusercontent.com/anniedotexe/8ab1f7baa078c8024144e232dc3e6763/raw/913759318c00a3110706509c566e9da5335dfa3c/green-blob.svg");
+  background-size: 35%, 48%, 11%;
+  background-position: right top, left bottom, right bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.image {
+  bottom: 0;
+}
+
+img {
+  height: 700px;
+  bottom: 0;
+  position: static;
+}
+
+/* NAV BAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 50px;
+}
+
+.nav-items ul {
+  display: flex;
+  gap: 40px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.nav-items ul li {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-items ul li:hover {
+  color: #604a4c;
+  text-decoration: underline;
+}
+
+/* MAIN CONTENT */
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+  height: 100%;
+}
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 36px;
+  letter-spacing: 0.1em;
+}
+
+h2 {
+  font-size: 72px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+h2 span {
+  font-size: 40px;
+  align-self: center;
+}
+
+h3 span {
+  font-weight: 700;
+}
+
+h2,
+h3 span {
+  color: #604a4c;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin-bottom: 75px;
+}
+
+button {
+  width: 210px;
+  height: 50px;
+  border: none;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #604a4c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  width: 225px;
+  background: #604a4ce4;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socials i {
+  font-size: 24px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.socials i:hover {
+  color: #604a4c;
+}
